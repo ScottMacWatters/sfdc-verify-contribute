@@ -4,11 +4,24 @@
   "description": "Project that allows additional data to be contributed to an instance of sfdc-verify",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [
-    "sfdc"
+    "sfdc",
+    "Deploy",
+    "Mongo",
+    "Salesforce"
   ],
   "author": "Scott MacWatters",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "sfdc-verify-tools": "^1.0.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ScottMacWatters/sfdc-verify-contribute"
+  }
 }

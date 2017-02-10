@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+var tools = require('sfdc-verify-tools');
+var db = tools.db;
+var sfdc = tools.sfdc.tooling;
+
+function beginTestTask(){
+  db.getLogins(function(logins){
+    sfdc.beginTestTask(logins,function(){
+      process.exit();
+    });
+  });
+}
+
+
+function checkTestTask(datacenter){
+  db.getLogins(function(logins){
+    sfdc.checkTestTasks(logins);
+  });
+}
+
+
+checkTestTask();
+beginTestTask();

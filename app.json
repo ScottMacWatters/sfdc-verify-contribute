@@ -1,0 +1,26 @@
+{
+  "name": "sfdc-verify-contribute",
+  "description": "Project that allows additional data to be contributed to an instance of sfdc-verify",
+  "keywords": [
+    "sfdc",
+    "Deploy",
+    "Mongo",
+    "Salesforce"
+  ],
+  "success_url": "/",
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "image": "heroku/node",
+  "addons": [
+    {
+      "plan": "mongolab:sandbox"
+    },
+    {
+      "plan": "scheduler:standard"
+    }
+  ],
+}
