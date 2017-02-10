@@ -1,0 +1,14 @@
+{
+  "name": "sfdc-verify-contribute",
+  "version": "1.0.0",
+  "description": "Project that allows additional data to be contributed to an instance of sfdc-verify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sfdc"
+  ],
+  "author": "Scott MacWatters",
+  "license": "ISC"
+}
